@@ -1,0 +1,19 @@
+{
+  "name": "aleph_apps",
+  "description": "Aleph Engineering Applications",
+  "main": "",
+  "authors": [
+    "reFucktor <hmvalcarcel@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
