@@ -1,4 +1,9 @@
+#bower ignore
 /bower_components
+
+#fot files
+*.fot
+
 # Created by .ignore support plugin (hsz.mobi)
 ### Node template
 # Logs
