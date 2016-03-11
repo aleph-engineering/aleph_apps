@@ -1,0 +1,80 @@
+@media only screen and  (min-width: 1601px) {
+    .ui.grid.container {
+        width: calc(1560px + 2rem) !important;
+    }
+    .ui.container{
+        width: 1560px !important;
+    }
+
+    /*Navbar*/
+    .header.item > img.ce_logo{
+        width: 14em!important;
+    }
+}
+@media (min-width: 1201px) and (max-width: 1600px){
+
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+@media (min-width: 768px) and (max-width: 992px) {
+
+}
+@media (max-width: 767px) {
+    .ce-navbar-menu .item:not(.sidebar-link){
+        display: none!important;
+    }
+}
+
+@font-face {
+    font-family: Consolas;
+    src: url("../fonts/consola.ttf"), local("Consolas");
+}
+
+body{
+    background: url("../images/dot.png");.
+}
+
+.m-top1{ margin-top: 1em!important; }
+.m-top2{ margin-top: 1.5em!important; }
+.m-top3{ margin-top: 2em!important; }
+.m-top4{ margin-top: 2.5em!important; }
+.m-top5{ margin-top: 3em!important; }
+
+.body-content {
+    margin-top: 5em!important;
+}
+.ce-font,
+.ce-font *:not(.icon){
+    font-family: Consolas, serif !important;
+    font-weight: 600!important;
+}
+.ce-font-color *:not(.icon),
+.ce-font-color{
+    font-family: Consolas, serif !important;
+    color: #4183c4!important;
+    font-weight: 600!important;
+}
+.ce-color.black{
+    background: rgb(0,0,0)!important;
+}
+.ce-color.grey{
+    background: #333333!important;
+}
+.ce-segments .ui.segment{
+    border-radius: 0!important;
+    border-top: none!important;
+}
+.ce-segments > .column{
+    padding-left: 0!important;
+}
+.ce-btn{
+    border-radius: 0!important;
+    padding: .55em 1.5em!important;
+}
+.ce-btn *{
+    vertical-align: baseline!important;
+}
+img.ce_logo{
+    width: 14em!important;
+}
