@@ -1,5 +1,19 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    div(class='container')
+        div(class='row options-selector')
+            div(class='col s12 m6 l6 sms-panel')
+                div( class="card" )
+                    div(class="card-image blue-grey darken-1")
+                        a(class="white-text waves-effect waves-block waves-light" href="/send_sms")
+                            i(class='mdi-communication-textsms mdi-5x activator')
+                    div(class="card-content")
+                        a(class="card-title activator grey-text text-darken-4" href='/send_sms') Send SMS
+            div(class='col s12 m6 l6 grapher-panel')
+                div( class="card" )
+                    div(class="card-image blue-grey darken-1")
+                        a(class="white-text waves-effect waves-block waves-light" href='/ce')
+                            i(class='mdi-action-settings-input-antenna mdi-5x')
+                    div(class="card-content")
+                        a(class="card-title activator grey-text text-darken-4" href='/ce') Cuban Engineer
