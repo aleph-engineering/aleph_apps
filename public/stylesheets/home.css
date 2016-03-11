@@ -1,0 +1,29 @@
+.options-selector {
+    margin-top: 15%;
+}
+.card-image{
+    height: 15.5em;
+}
+.card-image > a{
+    padding: 4em;
+}
+.sms-panel, .grapher-panel {
+    text-align: center;
+}
+.contact-list > .chip,
+.side-nav > .chip{
+    cursor: pointer;
+    display: block;
+    margin-top: 1em;
+    width: auto;
+}
+.side-nav{
+    padding: 2em;
+}
+.side-nav > .chip:first-child{
+    margin-top: 0;
+}
+.side-nav > .chip{
+    margin-top: .7em;
+}
+
