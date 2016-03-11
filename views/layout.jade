@@ -1,7 +1,13 @@
 doctype html
 html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    head
+        title= title
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+        meta(name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no")
+        link(rel='stylesheet', href='bower_components/Materialize/dist/css/materialize.min.css')
+        link(rel='stylesheet', href='/stylesheets/home.css')
+        script(src="/bower_components/jquery/dist/jquery.min.js")
+        script(src="/bower_components/Materialize/dist/js/materialize.min.js")
+    body(class='deep-purple lighten-5')
+        block content
