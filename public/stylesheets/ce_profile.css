@@ -1,0 +1,71 @@
+/*Navbar*/
+.ui.top.fixed.borderless.menu{
+    min-height: 6em;
+    /*background-color: transparent;*/
+    background: url("../images/dot.png");
+}
+.item > img.ui.circular.image{
+    border: rgba(100,100,100,.6) .2em solid;
+}
+.navbar-avatar-container .navbar-avatar{
+    height: 60px;
+    width: 60px;
+}
+.navbar-avatar-container .icon{
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+}
+.navbar-avatar-container a.username{
+    margin-left: .5em;
+    font-size: 1.2rem;
+}
+.menu .item .notification-label{
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    font-size: .8rem;
+}
+.ce-submenu > .item:hover{
+    background-color: transparent!important;
+}
+
+.ce-header-info .profile-avatar {
+    width: 150px!important;
+    height: 150px!important;
+    border: rgba(120,120,120,.4) .25em solid;
+    display: inline-flex!important;
+}
+.basic-info{
+    display: inline-flex;
+    padding-left: 2em;
+}
+.ce-header-info .username{
+    font-size: 1.3rem!important;
+    position: absolute;
+    top: 2em;
+    padding-left: 1.5em;
+}
+.basic-info .text-info{
+    display: block;
+    font-family: Consolas;
+    color: white;
+    font-size: .9rem;
+}
+.basic-info .button-info{
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+.basic-info .button-info .labeled.button{
+    margin-bottom: .4em;
+}
+.ui.segment .ce-corner-btn{
+    right: -4px;
+    bottom: -1px;
+}
+.ce-corner-btn{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,87 @@
+extends ce_layout
+
+block content
+    div(class="ui top fixed borderless menu")
+        div(class="ui container")
+            div(class="header item")
+                img(class="ce_logo", src="/images/logo_blue_ext.svg")
+            div(class="right menu ce-navbar-menu")
+                div(class="item navbar-avatar-container")
+                    img(class="ui circular image navbar-avatar", src="/images/refucktor_avatar.png")
+                    i(class="bordered inverted blue facebook icon")
+                    a(href='#', class="ce-font username") reFucktor
+                a(class="item")
+                    i(class="alarm large blue icon")
+                    div(class="ui ce-color black circular label notification-label ce-font") +99
+                a(class="item")
+                    i(class="world large blue icon")
+                    div(class="ui ce-color black label notification-label ce-font") en
+                a(class="item sidebar-link")
+                    i(class="sidebar inverted large icon")
+    div(class="ui stackable centered grid container body-content")
+        div(class="ui inverted ce-font-color ce-submenu black borderless menu fluid")
+            a(class="item") Personal Information
+            a(class="item") Edit Profile
+            div(class="item right floated")
+                i(class="unhide large icon")
+                label views
+                div(class="ui left pointing blue basic label") 207
+        div(class="eleven wide column")
+            div(class="ce-segments ui grid stackable")
+                div(class="ten wide column")
+                    div(class="ui ce-color grey segment ce-header-info")
+                        img(class="ui small circular image profile-avatar", src="/images/neutrino.png")
+                        a(class="ce-font username") aNeutrino
+                        div(class="basic-info")
+                            div(class="text-info")
+                                div
+                                    i(class="alarm icon")
+                                    label Software Engineer
+                                div
+                                    i(class="at icon")
+                                    label piotr.modrzyk@gmail.com
+                                div
+                                    i(class="calendar outline icon")
+                                    label CE Date: Feb 28, 2016
+                                div
+                                    i(class="marker icon")
+                                    label La Habana, Cuba
+                            div(class="button-info")
+                                div
+                                    div(class="ui labeled button", tabindex="0")
+                                        div(class="ui black button")
+                                            i(class="star yellow icon")
+                                        a(class="ui left pointing blue label") 60
+                                div
+                                    div(class="ui labeled button", tabindex="0")
+                                        div(class="ui black button")
+                                            i(class="fork inverted icon")
+                                        a(class="ui blue left pointing blue label") 25
+                div(class="six wide column")
+                    div(class="ui ce-color grey segment")
+        div(class="five wide column ce-segments")
+            div(class="ui ce-color grey segment")
+                a(class="ui grey ribbon label")
+                    i(class="announcement large icon")
+                    label(class="ce-font") Invitations
+                div(class="m-top2")
+                    div(class="ui labeled button ce-font", tabindex="0")
+                        div(class="ui black button")
+                            i(class="inbox grey icon")
+                            label Available Invitations
+                        a(class="ui left pointing blue label") 10
+                div(class="m-top1")
+                    div(class="ui labeled button ce-font", tabindex="0")
+                        div(class="ui black button")
+                            i(class="external grey icon")
+                            label Sent Invitations
+                        a(class="ui left pointing blue label") 0
+                button(class="ui button ce-font ce-btn ce-corner-btn")
+                    i(class="send blue icon")
+                    label Invite
+            div(class="ui ce-color grey segment")
+                a(class="ui grey ribbon label")
+                    i(class="pie chart large icon")
+                    label(class="ce-font") Profile Completion
+
+
