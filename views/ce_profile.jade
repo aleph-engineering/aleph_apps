@@ -4,16 +4,16 @@ block content
     div(class="ui top fixed borderless menu")
         div(class="ui container")
             div(class="header item")
-                img(class="ce_logo", src="/images/logo_blue_ext.svg")
+                img(class="ce_logo", src="")
             div(class="right menu ce-navbar-menu")
                 div(class="item navbar-avatar-container")
                     img(class="ui circular image navbar-avatar", src="/images/refucktor_avatar.png")
                     i(class="bordered inverted blue facebook icon")
                     a(href='#', class="ce-font username") reFucktor
-                a(class="item")
+                a(class="item notifications-link")
                     i(class="alarm large blue icon")
                     div(class="ui ce-color black circular label notification-label ce-font") +99
-                a(class="item")
+                a(class="item locale-link")
                     i(class="world large blue icon")
                     div(class="ui ce-color black label notification-label ce-font") en
                 a(class="item sidebar-link")
@@ -31,9 +31,9 @@ block content
                 div(class="ten wide column")
                     div(class="ui ce-color grey segment ce-header-info")
                         img(class="ui small circular image profile-avatar", src="/images/neutrino.png")
-                        a(class="ce-font username") aNeutrino
                         div(class="basic-info")
-                            div(class="text-info")
+                            a(class="ce-font username") aNeutrino
+                            div(class="text-info ce-font")
                                 div
                                     i(class="alarm icon")
                                     label Software Engineer
@@ -46,35 +46,39 @@ block content
                                 div
                                     i(class="marker icon")
                                     label La Habana, Cuba
-                            div(class="button-info")
-                                div
-                                    div(class="ui labeled button", tabindex="0")
-                                        div(class="ui black button")
-                                            i(class="star yellow icon")
-                                        a(class="ui left pointing blue label") 60
-                                div
-                                    div(class="ui labeled button", tabindex="0")
-                                        div(class="ui black button")
-                                            i(class="fork inverted icon")
-                                        a(class="ui blue left pointing blue label") 25
+                        div(class="button-info")
+                            div
+                                div(class="ui labeled button ce-font", tabindex="0")
+                                    div(class="ui black button")
+                                        i(class="star yellow icon")
+                                    a(class="ui left pointing blue label") 60
+                            div
+                                div(class="ui labeled button ce-font", tabindex="0")
+                                    div(class="ui black button")
+                                        i(class="fork inverted icon")
+                                    a(class="ui blue left pointing blue label") 25
                 div(class="six wide column")
                     div(class="ui ce-color grey segment")
                         a(class="ui grey ribbon label")
                             i(class="check circle large icon")
                             label(class="ce-font") Positions
                         div(class="m-top2 positions-panel")
-                            div
+                            div(class="position-item")
                                 a(class="ce-font-color") Lead Developer
                                 label(class="ce-font") at Aleph Engineer
-                            div
+                            div(class="position-item")
                                 a(class="ce-font-color") Senior GWT Developer
                                 label(class="ce-font") at Aleph Engineer
-                            div
+                            div(class="position-item")
                                 a(class="ce-font-color") Senior Javascript Developer
                                 label(class="ce-font") at Aleph Engineer
-                            div
-                                a(class="ce-font-color") First Developer
-                                label(class="ce-font") at Aleph Engineer
+                            div(class="position-item")
+                            hr(class="ce-color grey")
+            div(class="ui ce-color grey segment")
+                a(class="ui grey ribbon label")
+                    i(class="user large icon")
+                    label(class="ce-font") Summary
+                p El mio que clases ganas de matar la morronga esta. Pero ya casi cojoooone!!!
         div(class="five wide column ce-segments")
             div(class="ui ce-color grey segment")
                 a(class="ui grey ribbon label")

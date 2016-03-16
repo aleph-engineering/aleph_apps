@@ -43,8 +43,7 @@
 .ce-header-info .username{
     font-size: 1.3rem!important;
     position: absolute;
-    top: 2em;
-    padding-left: 1.5em;
+    top: 1em;
 }
 .basic-info .text-info{
     display: block;
@@ -52,12 +51,12 @@
     color: white;
     font-size: .9rem;
 }
-.basic-info .button-info{
+.button-info{
     position: absolute;
     right: 1em;
     bottom: 1em;
 }
-.basic-info .button-info .labeled.button{
+.button-info .labeled.button{
     margin-bottom: .4em;
 }
 .ui.segment .ce-corner-btn{
@@ -152,4 +151,8 @@
 .positions-panel label.ce-font{
     color: white;
     margin-left: .5em;
+}
+.positions-panel > div.position-item{
+    margin-bottom: .4em;
+    font-size: .9rem;
 }

@@ -8,6 +8,7 @@
 
     /*Navbar*/
     .header.item > img.ce_logo{
+        content: url("/images/logo_blue_ext.svg")!important;
         width: 14em!important;
     }
     .profile-completion-chart{
@@ -34,12 +35,52 @@
     }
 }
 @media (max-width: 768px) {
-    .ce-navbar-menu .item:not(.sidebar-link){
+    .ce-navbar-menu .username,
+    .ce-navbar-menu .locale-link{
         display: none!important;
+    }
+    .navbar-avatar-container .navbar-avatar{
+        height: 40px;
+        width: 40px;
+    }
+    .navbar-avatar-container i.icon{
+        font-size: .8rem;
+        left: 8px;
+        bottom: 8px;
     }
     .profile-completion-chart{
         height: 11.5rem;
         margin-top: 10%;
+    }
+    .ce-header-info .profile-avatar{
+        width: 120px!important;
+        height: 120px!important;
+    }
+    .basic-info{
+        padding-left: .8em!important;
+    }
+    .ce-font,
+    .ce-font-color{
+        font-size: .85em!important;
+    }
+    .button-info{
+        position: inherit;
+        margin-top: 2.5em!important;
+        text-align: center;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+    }
+    .button-info > div{
+        display: inline-flex!important;
+        margin-right: 2em;
+    }
+    .labeled.button > .button{
+        padding: .5em .9em!important;
+    }
+    .header.item > img.ce_logo{
+        content: url("/images/logo_blue.svg")!important;
+        width: 10em!important;
+        max-height: 3em;
     }
 }
 
@@ -87,9 +128,6 @@ body{
 .ce-segments .ui.segment{
     border-radius: 0!important;
     border-top: none!important;
-}
-.ce-segments > .column{
-    padding-left: 0!important;
 }
 .ce-btn{
     border-radius: 0!important;
