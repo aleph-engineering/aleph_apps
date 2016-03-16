@@ -108,23 +108,33 @@ body{
 .body-content {
     margin-top: 5em!important;
 }
-.ce-font,
-.ce-font *:not(.icon){
+
+
+.ce-font, .ce-font *:not(.icon){
     font-family: Consolas, serif !important;
     font-weight: 600!important;
 }
-.ce-font-color *:not(.icon),
-.ce-font-color{
+.ce-font-color *:not(.icon), .ce-font-color{
     font-family: Consolas, serif !important;
     color: #4183c4!important;
     font-weight: 600!important;
 }
+
+.ce-font.white{
+    color: rgb(255, 255, 255)!important;
+}
+
 .ce-color.black{
     background: rgb(0,0,0)!important;
 }
 .ce-color.grey{
     background: #333333!important;
 }
+.ce-color.white{
+    background: rgb(255,255,255)!important;
+}
+
+
 .ce-segments .ui.segment{
     border-radius: 0!important;
     border-top: none!important;
