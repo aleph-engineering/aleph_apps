@@ -69,3 +69,87 @@
     right: 0;
     bottom: 0;
 }
+.profile-completion-chart{
+    width: 100%;
+}
+.profile-completion-chart > *{
+    display: inline-flex;
+}
+.quarter-circle {
+    background-color:transparent;
+    height:50%;
+    width: 50%;
+}
+.quarter-circle.top-left{
+    -moz-border-radius: 150px 0 0 0;
+    -webkit-border-radius: 150px 0 0 0;
+    border-radius: 150px 0 0 0;
+    border-top: 20px solid rgb(31,136,190);
+    border-left: 20px solid rgb(31,136,190);
+}
+.quarter-circle.top-right{
+    -moz-border-radius: 0 150px 0 0;
+    -webkit-border-radius: 0 150px 0 0;
+    border-radius: 0 150px 0 0;
+    border-top: 20px solid rgb(222,50,30);
+    border-right: 20px solid rgb(222,50,30);
+}
+.quarter-circle.bottom-right{
+    -moz-border-radius: 0 0 150px 0;
+    -webkit-border-radius: 0 0 150px 0;
+    border-radius: 0 0 150px 0;
+    border-right: 20px solid rgb(59,89,152);
+    border-bottom: 20px solid rgb(59,89,152);
+    margin-top: -5px;
+}
+.quarter-circle.bottom-left{
+    -moz-border-radius: 0 0 0 150px;
+    -webkit-border-radius: 0 0 0 150px;
+    border-radius: 0 0 0 150px;
+    border-left: 20px solid #000000;
+    border-bottom: 20px solid #000000;
+    margin-top: -5px;
+}
+.icons-column{
+    width: 25%!important;
+    padding: 0 5%!important;
+}
+.lines-column{
+    width: 25%!important;
+    padding-left: 0!important;
+}
+.chart-column{
+    width: 45%!important;
+    padding-left: 0!important;
+}
+.icons-column > *{
+    font-size: 95%!important;
+}
+.icon-container{
+    padding: .6rem .59rem;
+    width: 100%;
+    max-width: 3.5rem;
+    min-width: 3rem;
+    max-height: 3.5rem;
+    min-height: 3rem;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+.icon-container > i.icon{
+    margin: 0!important;
+    color: white!important;
+    border-radius: 5px!important;
+    box-shadow: none;
+}
+.line{
+    max-height: 2px!important;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    height: 2px!important;
+    width: 100%;
+}
+.positions-panel label.ce-font{
+    color: white;
+    margin-left: .5em;
+}

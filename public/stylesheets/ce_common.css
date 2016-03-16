@@ -10,19 +10,36 @@
     .header.item > img.ce_logo{
         width: 14em!important;
     }
+    .profile-completion-chart{
+        height: 15rem;
+    }
 }
 @media (min-width: 1201px) and (max-width: 1600px){
+    .profile-completion-chart{
+        height: 10rem;
+        margin-top: 30%;
+    }
 
 }
-@media (min-width: 992px) and (max-width: 1200px) {
-
+@media (min-width: 993px) and (max-width: 1200px) {
+    .profile-completion-chart{
+        height: 8rem;
+        margin-top: 50%;
+    }
 }
-@media (min-width: 768px) and (max-width: 992px) {
-
+@media (min-width: 769px) and (max-width: 992px) {
+    .profile-completion-chart{
+        height: 8rem;
+        margin-top: 50%;
+    }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .ce-navbar-menu .item:not(.sidebar-link){
         display: none!important;
+    }
+    .profile-completion-chart{
+        height: 11.5rem;
+        margin-top: 10%;
     }
 }
 
@@ -40,6 +57,12 @@ body{
 .m-top3{ margin-top: 2em!important; }
 .m-top4{ margin-top: 2.5em!important; }
 .m-top5{ margin-top: 3em!important; }
+
+.m-bottom1{ margin-bottom: 1em!important; }
+.m-bottom2{ margin-bottom: 1.5em!important; }
+.m-bottom3{ margin-bottom: 2em!important; }
+.m-bottom4{ margin-bottom: 2.5em!important; }
+.m-bottom5{ margin-bottom: 3em!important; }
 
 .body-content {
     margin-top: 5em!important;
@@ -77,4 +100,33 @@ body{
 }
 img.ce_logo{
     width: 14em!important;
+}
+.ce-linkedin-bg,
+.ce-linkedin-bg > *{
+    background-color: rgb(35,140,220)!important;
+}
+.ce-linkedin-bg-light{
+    background-color: rgb(130, 185, 222) !important;
+}
+
+.ce-github-bg,
+.ce-github-bg > *{
+    background-color: rgb(0,0,0)!important;
+}
+.ce-github-bg-light{
+    background-color: rgb(130,130,130)!important;
+}
+.ce-facebook-bg,
+.ce-facebook-bg > *{
+    background-color: rgb(60,90,150)!important;
+}
+.ce-facebook-bg-light{
+    background-color: rgb(125,155,180)!important;
+}
+.ce-google-bg,
+.ce-google-bg > *{
+    background-color: rgb(220,30,30)!important;
+}
+.ce-google-bg-light{
+    background-color: rgb(245,150,150)!important;
 }
