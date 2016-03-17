@@ -8,7 +8,7 @@
 
     /*Navbar*/
     .header.item > img.ce_logo{
-        content: url("/images/logo_blue_ext.svg")!important;
+        content: url("../images/logo_blue_ext.svg")!important;
         width: 14em!important;
     }
     .profile-completion-chart{
@@ -78,9 +78,12 @@
         padding: .5em .9em!important;
     }
     .header.item > img.ce_logo{
-        content: url("/images/logo_blue.svg")!important;
+        content: url("../images/logo_blue.svg")!important;
         width: 10em!important;
         max-height: 3em;
+    }
+    .github-repository .right.floated .labeled.button{
+        display: none;
     }
 }
 

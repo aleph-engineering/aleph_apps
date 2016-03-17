@@ -156,3 +156,13 @@
     margin-bottom: .4em;
     font-size: .9rem;
 }
+.github-repository .small-description{
+    font-size: .8rem!important;
+    color: rgb(210, 210, 210);
+}
+.github-repository .labeled.button{
+    margin-left: .6rem;
+}
+.small.labeled.button > .button{
+    padding: .5em .9em!important;
+}
