@@ -166,3 +166,8 @@
 .small.labeled.button > .button{
     padding: .5em .9em!important;
 }
+.skill-container > .label{
+    margin-bottom: .5rem;
+    padding: .4rem .6rem;
+    background-color: rgb(205,205,205);
+}
