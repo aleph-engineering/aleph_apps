@@ -23,6 +23,13 @@
         height: 10rem;
         margin-top: 30%;
     }
+    .ct-chart{
+        padding-top: 3em;
+    }
+    .header.item > img.ce_logo{
+        content: url("../images/logo_blue_ext.svg")!important;
+        width: 13em!important;
+    }
 
 }
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -30,11 +37,18 @@
         height: 8rem;
         margin-top: 50%;
     }
+    .header.item > img.ce_logo{
+        content: url("../images/logo_blue_ext.svg")!important;
+        width: 13em!important;
+    }
 }
 @media (min-width: 769px) and (max-width: 992px) {
     .profile-completion-chart{
         height: 8rem;
         margin-top: 50%;
+    }
+    .ce-submenu{
+        display: none;
     }
 }
 @media (max-width: 768px) {
