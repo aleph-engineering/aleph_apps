@@ -19,6 +19,7 @@
   "dependencies": {
     "Materialize": "materialize#0.97.5",
     "jquery": "2.2.1",
-    "semantic": "semantic-ui#2.1.8"
+    "semantic": "semantic-ui#2.1.8",
+    "chartist": "~0.9.7"
   }
 }
