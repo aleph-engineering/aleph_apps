@@ -12,12 +12,12 @@
                 className: 'google-serie'},
             {
                 value: 25,
-                className: 'facebook-serie'}
+                className: 'null-serie'}
         ]
     }, {
         donut: true,
         chartPadding: 0,
-        donutWidth: 20,
+        donutWidth: 25,
         startAngle: 270,
         total: 100,
         showLabel: false

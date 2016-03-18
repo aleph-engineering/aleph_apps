@@ -178,3 +178,6 @@
 .google-serie .ct-slice-donut{
     stroke: rgb(220,30,30);
 }
+.null-serie .ct-slice-donut{
+    stroke: rgb(60, 60, 60);
+}
