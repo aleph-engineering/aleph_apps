@@ -68,12 +68,6 @@
     right: 0;
     bottom: 0;
 }
-.profile-completion-chart{
-    width: 100%;
-}
-.profile-completion-chart > *{
-    display: inline-flex;
-}
 .quarter-circle {
     background-color:transparent;
     height:50%;
@@ -170,4 +164,17 @@
     margin-bottom: .5rem;
     padding: .4rem .6rem;
     background-color: rgb(205,205,205);
+}
+
+.github-serie .ct-slice-donut {
+    stroke: rgb(0,0,0);
+}
+.linkedin-serie .ct-slice-donut{
+    stroke: rgb(35,140,220);
+}
+.facebook-serie .ct-slice-donut{
+    stroke: rgb(60,90,150);
+}
+.google-serie .ct-slice-donut{
+    stroke: rgb(220,30,30);
 }

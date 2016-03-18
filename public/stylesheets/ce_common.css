@@ -14,6 +14,9 @@
     .profile-completion-chart{
         height: 15rem;
     }
+    .ct-chart{
+        padding-top: 3em;
+    }
 }
 @media (min-width: 1201px) and (max-width: 1600px){
     .profile-completion-chart{
@@ -84,6 +87,9 @@
     }
     .github-repository .right.floated .labeled.button{
         display: none;
+    }
+    .ct-chart{
+        padding-top: 2.5em;
     }
 }
 
