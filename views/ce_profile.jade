@@ -1,6 +1,12 @@
 extends ce_layout
 
 block content
+    div(class="ui sidebar inverted vertical menu")
+        a(class="item") A
+        a(class="item") A
+        a(class="item") A
+        a(class="item") A
+        a(class="item") A
     div(class="ui top fixed borderless menu")
         div(class="ui container")
             div(class="header item")
@@ -10,12 +16,25 @@ block content
                     img(class="ui circular image navbar-avatar", src="/images/refucktor_avatar.png")
                     i(class="bordered inverted blue facebook icon")
                     a(href='#', class="ce-font username") reFucktor
-                a(class="item notifications-link")
+                a(class="ui pointing top right dropdown link item notifications-link")
                     i(class="alarm large blue icon")
                     div(class="ui ce-color black circular label notification-label ce-font") +99
-                a(class="item locale-link")
+                    div(class="menu ui list")
+                        div(class="item ce-font white")
+                            i(class="mail icon")
+                            div(class="content")
+                                div(class="header") You received new email)
+                                div(class="description") I want to work with you!
+                a(class="ui pointing top right dropdown link item locale-link")
                     i(class="world large blue icon")
                     div(class="ui ce-color black label notification-label ce-font") en
+                    div(class="menu")
+                        div(class="item ce-font white")
+                            i(class="cu flag")
+                            span(class="text") Spanish
+                        div(class="item ce-font white")
+                            i(class="us flag")
+                            span(class="text") English
                 a(class="item sidebar-link")
                     i(class="sidebar inverted large icon")
     div(class="ui stackable centered grid container body-content")
@@ -211,3 +230,4 @@ block content
                     div(class="position-item")
                     hr(class="ce-color grey")
     script(src="/javascripts/ce_donut.js")
+

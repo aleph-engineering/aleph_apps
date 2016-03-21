@@ -32,6 +32,7 @@
     }
 
 }
+
 @media (min-width: 993px) and (max-width: 1200px) {
     .profile-completion-chart{
         height: 8rem;

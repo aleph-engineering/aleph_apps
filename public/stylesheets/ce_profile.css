@@ -7,6 +7,18 @@
 .item > img.ui.circular.image{
     border: rgba(100,100,100,.6) .2em solid;
 }
+.ce-navbar-menu .pointing.top.right.dropdown .menu{
+    margin-top: -1em;
+    font-size: .85rem!important;
+    background-color: #333333!important;
+    margin-right: 1.2em;
+}
+.ce-navbar-menu .pointing.top.right.dropdown .menu:after{
+    background-color: #333333!important;
+}
+.ce-navbar-menu .pointing.top.right.dropdown .menu > .item{
+    color: white!important;
+}
 .navbar-avatar-container .navbar-avatar{
     height: 60px;
     width: 60px;
@@ -169,6 +181,7 @@
 .github-serie .ct-slice-donut {
     stroke: rgb(0,0,0);
 }
+
 .linkedin-serie .ct-slice-donut{
     stroke: rgb(35,140,220);
 }
