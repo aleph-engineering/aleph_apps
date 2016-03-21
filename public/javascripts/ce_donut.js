@@ -1,4 +1,10 @@
 (function(){
+    createDonutChart();
+    semanticInitialization();
+    activateSidebar();
+})();
+
+function createDonutChart(){
     new Chartist.Pie('.ct-chart', {
         series: [
             {
@@ -22,4 +28,14 @@
         total: 100,
         showLabel: false
     });
-})();
+}
+function semanticInitialization(){
+    $('.ui.dropdown').dropdown({
+        on: 'hover'
+    });
+}
+function activateSidebar(){
+    $('.sidebar-link').click(function () {
+        $('.ui.sidebar').sidebar('toggle');
+    });
+}
