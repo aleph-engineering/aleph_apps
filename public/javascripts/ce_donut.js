@@ -2,6 +2,8 @@
     createDonutChart();
     semanticInitialization();
     activateSidebar();
+    activateModal();
+    closeSendEmailModal();
 })();
 
 function createDonutChart(){
@@ -40,4 +42,16 @@ function activateSidebar(){
             .sidebar('setting', 'transition', 'overlay')
             .sidebar('toggle');
     });
+}
+function activateModal(){
+    $('#openInvitationModal').click(function(){
+        $('.modal-container').addClass('active');
+        $('.modal').addClass('active');
+    });
+}
+function closeSendEmailModal() {
+    $('#closeEmailModal').click(function(){
+        $('.modal-container').removeClass('active');
+        $('.modal').removeClass('active');
+    })
 }
