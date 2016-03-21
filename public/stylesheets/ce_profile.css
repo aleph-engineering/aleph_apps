@@ -41,7 +41,9 @@
 .ce-submenu > .item:hover{
     background-color: transparent!important;
 }
-
+.body-content{
+    padding-top: 2.75em!important;
+}
 .ce-header-info .profile-avatar {
     width: 150px!important;
     height: 150px!important;
@@ -181,7 +183,6 @@
 .github-serie .ct-slice-donut {
     stroke: rgb(0,0,0);
 }
-
 .linkedin-serie .ct-slice-donut{
     stroke: rgb(35,140,220);
 }
@@ -193,4 +194,30 @@
 }
 .null-serie .ct-slice-donut{
     stroke: rgb(60, 60, 60);
+}
+.notifications-link .menu{
+    max-width: 300px;
+    overflow-x: hidden;
+}
+.notifications-link .menu > .item .header{
+    font-size: 1.2em!important;
+}
+.notifications-link .menu > .item .description{
+    font-size: .88em!important;
+    font-weight: 300!important;
+    max-width: 200px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.notifications-link .menu > .item > i.icon{
+    vertical-align: super;
+    margin-right: 1.5em!important;
+}
+.notifications-link .menu > .item div.content{
+    display: inline-block!important;
+    vertical-align: baseline!important;
+}
+.notifications-link .menu > .item div.content .description{
+    padding-top: .45rem!important;
 }

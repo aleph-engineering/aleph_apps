@@ -36,6 +36,8 @@ function semanticInitialization(){
 }
 function activateSidebar(){
     $('.sidebar-link').click(function () {
-        $('.ui.sidebar').sidebar('toggle');
+        $('.ui.sidebar')
+            .sidebar('setting', 'transition', 'overlay')
+            .sidebar('toggle');
     });
 }

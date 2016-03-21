@@ -6,7 +6,6 @@
         width: 1560px !important;
     }
 
-    /*Navbar*/
     .header.item > img.ce_logo{
         content: url("../images/logo_blue_ext.svg")!important;
         width: 14em!important;
@@ -113,8 +112,8 @@
     src: url("../fonts/consola.ttf"), local("Consolas");
 }
 
-body{
-    background: url("../images/dot.png");.
+body, .pusher{
+    background: url("../images/dot.png")!important;
 }
 
 .m-top1{ margin-top: 1em!important; }
@@ -146,6 +145,9 @@ body{
 
 .ce-font.white{
     color: rgb(255, 255, 255)!important;
+}
+.ce-font.blue{
+    color: #4183c4!important;
 }
 
 .ce-color.black{
