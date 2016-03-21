@@ -35,6 +35,7 @@ function semanticInitialization(){
     $('.ui.dropdown').dropdown({
         on: 'hover'
     });
+    $('.sidebar .ui.dropdown').dropdown();
 }
 function activateSidebar(){
     $('.sidebar-link').click(function () {

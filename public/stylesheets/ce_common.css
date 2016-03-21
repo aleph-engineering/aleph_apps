@@ -72,7 +72,7 @@
 }
 @media (max-width: 768px) {
     .ce-navbar-menu .username,
-    .ce-navbar-menu .locale-link,
+    .ce-navbar-menu .navbar-avatar-container,
     .ce-navbar-menu .logout-link{
         display: none!important;
     }

@@ -46,16 +46,30 @@
 }
 
 /*Sidebar*/
+.sidebar{
+    width: 180px;
+}
 .sidebar img.image{
     width: 90px!important;
     height: 90px!important;
     box-shadow: 1px 1px 8px 1px rgba(150, 150, 150, 1);
     border: 1px solid rgba(100,100,100,.8);
 }
-.sidebar i.icon{
+.sidebar .sidebar-avatar-container i.icon{
     position: relative;
     bottom: 1.5em;
-    left: 30%;
+    left: 20%;
+}
+.sidebar .item{
+    min-height: 2.5em!important;
+    padding: .7em .85em!important;
+}
+.sidebar .item *:not(.dropdown){
+    float: left !important;
+    font-size: .95rem!important;
+}
+.sidebar .item i.icon{
+    margin-right: 1em!important;
 }
 
 
