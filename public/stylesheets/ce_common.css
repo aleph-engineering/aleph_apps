@@ -16,6 +16,11 @@
     .ct-chart{
         padding-top: 3em;
     }
+    /*Modals*/
+    .modal{
+        width: 35%;
+        margin-top: 5%;
+    }
 }
 @media (min-width: 1201px) and (max-width: 1600px){
     .profile-completion-chart{
@@ -29,7 +34,11 @@
         content: url("../images/logo_blue_ext.svg")!important;
         width: 13em!important;
     }
-
+    /*Modals*/
+    .modal{
+        width: 50%;
+        margin-top: 8%;
+    }
 }
 
 @media (min-width: 993px) and (max-width: 1200px) {
@@ -41,6 +50,11 @@
         content: url("../images/logo_blue_ext.svg")!important;
         width: 13em!important;
     }
+    /*Modals*/
+    .modal{
+        width: 60%;
+        margin-top: 10%;
+    }
 }
 @media (min-width: 769px) and (max-width: 992px) {
     .profile-completion-chart{
@@ -50,10 +64,16 @@
     .ce-submenu{
         display: none;
     }
+    /*Modals*/
+    .modal{
+        width: 70%;
+        margin-top: 12%;
+    }
 }
 @media (max-width: 768px) {
     .ce-navbar-menu .username,
-    .ce-navbar-menu .locale-link{
+    .ce-navbar-menu .locale-link,
+    .ce-navbar-menu .logout-link{
         display: none!important;
     }
     .navbar-avatar-container .navbar-avatar{
@@ -99,11 +119,22 @@
         width: 10em!important;
         max-height: 3em;
     }
+    .body-content .ce-submenu.menu{
+        display: none!important;
+    }
     .github-repository .right.floated .labeled.button{
-        display: none;
+        display: none!important;
     }
     .ct-chart{
         padding-top: 2.5em;
+    }
+    .ce-navbar-menu .sidebar-link{
+        display: inherit!important;
+    }
+    /*Modals*/
+    .modal{
+        width: 80%;
+        margin-top: 15%;
     }
 }
 
