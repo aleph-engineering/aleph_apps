@@ -196,6 +196,10 @@
     margin-bottom: .4em;
     font-size: .9rem;
 }
+.github-repository{
+    overflow-y: scroll;
+    max-height: 21rem;
+}
 .github-repository .small-description{
     font-size: .8rem!important;
     color: rgb(210, 210, 210);
