@@ -1,0 +1,25 @@
+body
+{
+    background-size:100% !important;
+    background: url('../images/home_bg.jpg') no-repeat center !important;
+}
+
+.layer {
+    width: 100%!important;
+    height: 18%!important;
+}
+
+.layer_bg{
+    background-color: rgba(1, 0, 0, 0.7)!important;
+}
+
+.logo_home {
+    width: 20em !important;
+    margin-top: 3% !important;
+    content: url("../images/logo_blue_ext.svg")!important;
+}
+
+.box{
+    position: absolute;
+    bottom: 10px
+}
