@@ -197,7 +197,7 @@
     font-size: .9rem;
 }
 .github-repository{
-    overflow-y: scroll;
+    overflow-y: auto;
     max-height: 21rem;
 }
 .github-repository .small-description{
