@@ -2,15 +2,35 @@
 {
     width: 100%!important;
     height: 100%!important;
-    background-size:100% !important;
-    background: url('../images/home_bg.jpg') no-repeat center !important;
+    background: url('../images/home_bg.jpg') no-repeat center;
 }
+.home-panel .logo_home {
+    content: url("../images/logo_blue_ext.svg")!important;
+}
+.home-panel .item{
+    position: relative;
+    top: 5%;
+    left: 6%;
+    z-index: 100;
+}
+.dark-blur-panel{
+    position: absolute;
+    min-height: 100%;
+    max-height: 1600px;
+    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.6), rgba(0,0,0,.4), rgba(0,0,0,.3),rgba(0,0,0,.3));
+    -webkit-filter: blur(7px);
+    -moz-filter: blur(7px);
+    -o-filter: blur(7px);
+    filter: blur(7px);
+    z-index: 10;
+}
+
+/*
 
 .layer {
     width: 100%!important;
     height: 18%!important;
 }
-
 .layer_bg{
     background-color: rgba(1, 0, 0, 0.7)!important;
 }
@@ -25,3 +45,4 @@
     position: absolute;
     bottom: 10px
 }
+*/
