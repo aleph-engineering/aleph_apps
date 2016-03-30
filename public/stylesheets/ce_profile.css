@@ -200,9 +200,10 @@
     overflow-y: auto;
     max-height: 21rem;
 }
-.github-repository .small-description{
+.small-description{
     font-size: .8rem!important;
     color: rgb(210, 210, 210);
+    font-weight: 600!important;
 }
 .github-repository .labeled.button{
     margin-left: .6rem;

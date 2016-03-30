@@ -214,7 +214,7 @@ body{
 
 .ce-font, .ce-font *:not(.icon){
     font-family: Consolas, serif !important;
-    font-weight: 600!important;
+    /*font-weight: 600!important;*/
 }
 .ce-font-color *:not(.icon), .ce-font-color{
     font-family: Consolas, serif !important;
@@ -286,4 +286,8 @@ img.ce_logo{
 }
 .ce-google-bg-light{
     background-color: rgb(245,150,150)!important;
+}
+
+.ce-separated-description{
+    margin-top: 4%;
 }
