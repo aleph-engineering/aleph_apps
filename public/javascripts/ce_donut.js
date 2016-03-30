@@ -27,7 +27,7 @@ function createDonutChart(){
         chartPadding: 0,
         donutWidth: 25,
         startAngle: 270,
-        total: 100,
+        total: 125,
         showLabel: false
     });
 }
