@@ -4,8 +4,11 @@ footer{
 footer .three.column{
     box-shadow: none!important;
 }
-footer .circles-stats{
+footer > .segment{
     padding-top: 2em!important;
+    padding-bottom: 2em!important;
+}
+footer .circles-stats{
     padding-bottom: 2em!important;
 }
 .circles-stats .c100{
