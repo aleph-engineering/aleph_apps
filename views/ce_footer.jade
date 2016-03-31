@@ -1,5 +1,41 @@
 footer
     div(class="ui inverted vertical segment")
         div(class="ui container")
-            div(class="ui stackable inverted divided equal height stackable grid")
-
+            div(class="ui stackable inverted centered equal height stackable grid circles-stats")
+                div(class="three wide column ui center aligned")
+                    div(class="c100 p0 row" data-percent="0")
+                        span(class="ce-font total-users" data-total="80") 80
+                        div(class="slice")
+                            div(class="bar")
+                            div(class="fill")
+                        div(class="sub-text ce-font")
+                            label users
+                div(class="three wide column")
+                    div(class="c100 p0" data-perc="0")
+                        span(class="ce-font total-hired" data-total="100") 120
+                        div(class="slice")
+                            div(class="bar")
+                            div(class="fill")
+                        div(class="sub-text ce-font")
+                            label hired
+                div(class="three wide column")
+                    div(class="c100 p0" data-perc="0")
+                        span(class="ce-font total-teams" data-total="190") 350
+                        div(class="slice")
+                            div(class="bar")
+                            div(class="fill")
+                        div(class="sub-text ce-font")
+                            label teams
+                div(class="three wide column")
+                    div(class="c100 p0" data-perc="0")
+                        span(class="ce-font total-visits" data-total="88") 360
+                        div(class="slice")
+                            div(class="bar")
+                            div(class="fill")
+                        div(class="sub-text ce-font")
+                            label visits
+            div(class="ui inverted section divider")
+            div()
+    link(rel='stylesheet', href='/stylesheets/circle.css')
+    link(rel='stylesheet', href='/stylesheets/ce_footer.css')
+    script(src="/javascripts/ce_footer.js")

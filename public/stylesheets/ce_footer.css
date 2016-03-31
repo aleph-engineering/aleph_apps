@@ -1,0 +1,25 @@
+footer{
+    margin-top: 3em;
+}
+footer .three.column{
+    box-shadow: none!important;
+}
+footer .circles-stats{
+    padding-top: 2em!important;
+    padding-bottom: 2em!important;
+}
+.circles-stats .c100{
+    font-size: 188px;
+    width: 100%;
+    background-color: transparent!important;
+}
+.circles-stats .c100:after{
+    background-color: transparent!important;
+}
+.c100 .sub-text{
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -1.8em;
+    text-transform: uppercase;
+    left: 25%;
+}
