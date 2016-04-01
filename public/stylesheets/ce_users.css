@@ -129,7 +129,7 @@
     width: 100%;
     height: 100%;
     /*border: 3px solid rgba(133, 133, 133, 0.8);*/
-    box-shadow: 0 0 5px 5px rgb(43, 43, 43);
+    box-shadow: 0 0 0 5px rgb(43, 43, 43);
 }
 .ce-cards-pack .ce-card .image>img:after{
     position: absolute;
