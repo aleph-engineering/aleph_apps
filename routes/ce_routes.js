@@ -12,4 +12,8 @@ router.get('/home', function(req, res, next) {
     res.render('ce_home', { title: "CubanEngineer Home page" });
 });
 
+router.get('/users', function(req, res, next) {
+    res.render('ce_users', { title: "CubanEngineer Home page" });
+});
+
 module.exports = router;

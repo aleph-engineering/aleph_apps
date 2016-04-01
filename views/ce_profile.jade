@@ -1,17 +1,8 @@
 extends ce_layout
 
 block content
-    div(class="ui thin sidebar inverted vertical borderless menu")
-        div(class="sidebar-avatar-container")
-            img(class="ui small circular image centered m-top3" src="/images/refucktor_avatar.png")
-            i(class="bordered inverted blue facebook icon")
-        div(class="item ce-font blue")
-            i(class="edit icon")
-            label Edit Profile
-        a(class="item ce-font blue")
-            i(class="sign out icon")
-            label Logout
-    include navbar
+    include ce_sidebar
+    include ce_navbar
     div(class="ui stackable centered grid container body-content")
         div(class="ui inverted ce-font-color ce-submenu black borderless menu fluid")
             a(class="item") Personal Information

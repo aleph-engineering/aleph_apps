@@ -1,0 +1,169 @@
+@media only screen and  (min-width: 1601px){
+    .ce-cards-pack .ce-card{
+        width: 13.5%;
+    }
+    .ce-cards-pack .ce-card{
+        margin: 0 1.55%;
+    }
+    .ce-cards-pack .ce-card .image{
+        width: 208px;
+        height: 208px;
+    }
+    .ce-cards-pack .ce-card .content{
+        top: 105px;
+        padding-top: 115px;
+    }
+
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+    .ce-cards-pack .ce-card{
+        width: 17%;
+    }
+    .ce-cards-pack .ce-card{
+        margin: 0 1.45%;
+    }
+    .ce-cards-pack .ce-card .image{
+        width: 190px;
+        height: 190px;
+    }
+    .ce-cards-pack .ce-card .content{
+        top: 96px;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .ce-cards-pack .ce-card{
+        width: 20%;
+    }
+    .ce-cards-pack .ce-card{
+        margin: 0 2.5%;
+    }
+    .ce-cards-pack .ce-card .image{
+        width: 190px;
+        height: 190px;
+    }
+    .ce-cards-pack .ce-card .content{
+        top: 96px;
+        padding-top: 100px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px)  {
+    .ce-cards-pack .ce-card{
+        width: 28.3%;
+    }
+    .ce-cards-pack .ce-card{
+        margin: 0 2.5%;
+    }
+    .ce-cards-pack .ce-card .image{
+        width: 210px;
+        height: 210px;
+    }
+    .ce-cards-pack .ce-card .content{
+        top: 106px;
+        padding-top: 115px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ce-cards-pack .ce-card{
+        width: 140px;
+    }
+    .ce-cards-pack .ce-card{
+        margin: 0 2.5%;
+        height: 20em!important;
+    }
+    .ce-cards-pack .ce-card .image{
+        width: 138px;
+    }
+    .ce-cards-pack .ce-card .content{
+        top: 65px;
+        padding-top: 70px;
+    }
+    .ce-card .content .information,
+    .ce-card .content .status .label{
+        font-size: .5rem!important;
+    }
+}
+
+.ce-cards-pack{
+    width: 100%!important;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.ce-cards-pack .ce-card{
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 2rem;
+    text-align: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 27em;
+    /*to remove*/
+    color: white;
+    /*background-color: rgb(95, 93, 163);*/
+
+}
+.ce-cards-pack .ce-card .image{
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    display: block;
+    z-index: 100;
+}
+.ce-cards-pack .ce-card .image>img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    /*border: 3px solid rgba(133, 133, 133, 0.8);*/
+    box-shadow: 0 0 5px 5px rgb(43, 43, 43);
+}
+.ce-cards-pack .ce-card .image>img:after{
+    position: absolute;
+}
+.ce-cards-pack .ce-card .content{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 1em;
+    z-index: 10;
+
+    /*to remove*/
+    background-color: rgba(107, 107, 107, 0.8);
+}
+.ce-card .content .username{
+    font-size: 1rem;
+}
+.ce-card .content .information{
+    font-size: .75rem;
+    text-align: left;
+    text-overflow: ellipsis;
+    text-wrap: none;
+    padding-bottom: 1em;
+    border-bottom: 1px solid rgb(100,100,100);
+}
+.ce-card .content .status {
+    padding-top: 1em;
+    text-align: left;
+    opacity: .7;
+}
+.ce-card .content .status .label{
+    margin-right: .7em;
+    padding-right: .7em!important;
+    padding-left: 1em!important;
+}
