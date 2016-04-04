@@ -20,6 +20,10 @@ function sendSMS(){
             url: '/api/sendSMS',
             dataType: "json",
             data: data
-        })
+        }).done(function(data){
+            Materialize.toast("Your message was sent correctly", 2000);
+        }).fail(function(data){
+            Materialize.toast("Error! Your message couldn't be sent. Message: "+ data, 2000);
+        });
     });
 }
