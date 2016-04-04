@@ -6,7 +6,7 @@ router.get('/sendSMS', function(req, res, next){
     var number = req.query['number'];
     var body_message = req.query['message'];
 
-    var client = require('twilio')('AC525c4929b17f0023e6067967a16232f0', '7a1cfcc80b4adc7634cf037b3dbcd930');
+    var client = require('twilio')(process.env.TWILIO_ACCOUNT_SID, process.env.TWILIO_AUTH_TOKEN);
 
     client.sendSms({
         to: number,
@@ -18,8 +18,10 @@ router.get('/sendSMS', function(req, res, next){
             console.log(message.sid);
             console.log('Message sent on:');
             console.log(message.dateCreated);
+            res.status(202).send(true);
         } else {
             console.log('Oops! There was an error.'+ error.message);
+            res.status(500).send(error.message);
         }
     });
 
