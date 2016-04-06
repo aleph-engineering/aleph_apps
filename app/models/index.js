@@ -1,33 +1,35 @@
 'use strict';
 
-const mongoose = require('mongoose'), Schema = mongoose.Schema;
-const bcrypt = require('bcrypt');
+const mongoose = require('mongoose'), Schema = mongoose.Schema,
+    passportLocalMongoose = require('passport-local-mongoose');
 
 
 const LocalUserSchema = new Schema({
+    id          : { type: String },
     username    : { type: String },
-    password    : { type: String, set: setHash },
-    name        : { type: String },
-    email       : { type: String },
-    reg_date    : { type: Date, default: new Date()}
+    password    : { type: String }
 });
-LocalUserSchema.verifyPassword = function(password){
-    bcrypt.compare(password, LocalUserSchema.password, function(err, res) {
-        return res;
-    });
-};
+LocalUserSchema.plugin(passportLocalMongoose);
 
-const GoogleUserSchemma = new Schema({
+const GoogleUserSchema = new Schema({
+    id          : { type: String },
     username    : { type: String },
     email       : { type: String }
 });
 
-const FacebookUserSchemma = new Schema({
+const FacebookUserSchema = new Schema({
+    id          : { type: String},
     username    : { type: String },
     email       : { type: String }
 });
 
-const LinkedInUserSchemma = new Schema({
+const LinkedInUserSchema = new Schema({
+    id          : { type: String},
+    username    : { type: String },
+    email       : { type: String }
+});
+const GitHubUserSchema = new Schema({
+    id          : { type: String},
     username    : { type: String },
     email       : { type: String }
 });
@@ -48,13 +50,16 @@ const FeedSchema = new Schema({
     comments     : [CommentSchema]
 });
 const ProfileSchema = new Schema({
-    userId          : { type: String},
     availableVotes  : { type: Number},
+    name            : { type: String },
+    email           : { type: String },
+    reg_date        : { type: Date, default: new Date()},
     feed            : [FeedSchema],
-    localId         : LocalUserSchema,
-    googleId        : GoogleUserSchemma,
-    facebookId      : FacebookUserSchemma,
-    linkedInId      : LinkedInUserSchemma
+    localUser       : LocalUserSchema,
+    googleUser      : GoogleUserSchema,
+    facebookUser    : FacebookUserSchema,
+    linkedInUser    : LinkedInUserSchema,
+    gitHubUser      : GitHubUserSchema
 });
 
 const CrashLogSchema = new Schema({
@@ -62,17 +67,12 @@ const CrashLogSchema = new Schema({
     text            : { type: String }
 });
 
-function setHash(password){
-    bcrypt.hash(password, 10, function(err, hash) {
-        return hash;
-    });
-}
-
 module.exports = {
     LocalUser: mongoose.model('localUser', LocalUserSchema),
-    GoogleUser: mongoose.model('googleUser', GoogleUserSchemma),
-    FacebookUser: mongoose.model('facebookUser', FacebookUserSchemma),
-    LinkedInUser: mongoose.model('linkedInUser', LinkedInUserSchemma),
+    GoogleUser: mongoose.model('googleUser', GoogleUserSchema),
+    FacebookUser: mongoose.model('facebookUser', FacebookUserSchema),
+    LinkedInUser: mongoose.model('linkedInUser', LinkedInUserSchema),
+    GitHubUser: mongoose.model('gitHubUser', GitHubUserSchema),
     Profile: mongoose.model('profile', ProfileSchema),
     Feed: mongoose.model('feed', FeedSchema),
     Comment: mongoose.model('comment', CommentSchema),
