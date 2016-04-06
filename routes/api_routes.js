@@ -1,6 +1,6 @@
+'use strict';
 var express = require('express');
 var router = express.Router();
-var app = express();
 
 router.get('/sendSMS', function(req, res, next){
     var number = req.query['number'];
@@ -10,7 +10,6 @@ router.get('/sendSMS', function(req, res, next){
 
     client.sendSms({
         to: number,
-        from: '+48799449177',
         body: body_message
     }, function(error, message) {
         if (!error) {
