@@ -5,7 +5,12 @@ block content
         input(type='text', name='username', placeholder='username')
         input(type='password', name='password', placeholder='password')
         input(type='submit', value="Login")
-        a(href='/auth/facebook/') Facebook
+        div
+            a(href='/auth/facebook/') Facebook
+        div
+            a(href='/auth/google/') Google
+        div
+            a(href='/auth/linkedin/') LinkedIn
     br
     if (message.length > 0)
         p= message
