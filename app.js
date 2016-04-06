@@ -4,9 +4,14 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var session = require('express-session');
+var mongoose = require('mongoose');
+var flash = require('connect-flash');
+/**
+ * My Routes
+ * @type {router|exports|module.exports}
+ */
 var routes = require('./routes/index');
-var users = require('./routes/users');
 var cubaneng = require('./routes/ce_routes');
 var sms = require('./routes/sms_routes');
 var apis = require('./routes/api_routes');
@@ -25,12 +30,34 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/bower_components',  express.static(__dirname + '/bower_components'));
+app.use(session({
+    secret: '4c86a73f-592b-4751-abf6-e334e752b540',
+    cookie: {maxAge: 86400000},
+    resave: false,
+    saveUninitialized: true
+}));
+app.use(flash());
 
+/**
+ * Mongoose Configurations
+ * @type {connections|exports|module.exports}
+ */
+var connections = require('./app/db');
+mongoose.connect(process.env.MONGOLAB_URI || connections.DEVELOPMENT_URL);
+
+/**
+ * Passport Configurations
+ */
+require('./app/passport')(app);
+
+/**
+ * Routes configurations
+ */
 app.use('/', routes);
 app.use('/ce', cubaneng);
-app.use('/users', users);
 app.use('/sms', sms);
 app.use('/api', apis);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
