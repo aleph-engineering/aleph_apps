@@ -15,6 +15,7 @@ var routes = require('./routes/index');
 var cubaneng = require('./routes/ce_routes');
 var sms = require('./routes/sms_routes');
 var apis = require('./routes/api_routes');
+var toi_routes = require('./routes/toi_routes');
 
 var app = express();
 
@@ -57,6 +58,7 @@ app.use('/', routes);
 app.use('/ce', cubaneng);
 app.use('/sms', sms);
 app.use('/api', apis);
+app.use('/toi', toi_routes);
 
 
 // catch 404 and forward to error handler
