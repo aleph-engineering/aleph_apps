@@ -7,30 +7,36 @@ const mongoose = require('mongoose'), Schema = mongoose.Schema,
 const LocalUserSchema = new Schema({
     id          : { type: String },
     username    : { type: String },
-    password    : { type: String }
+    password    : { type: String },
+    email       : { type: String }
 });
 LocalUserSchema.plugin(passportLocalMongoose);
 
 const GoogleUserSchema = new Schema({
     id          : { type: String },
-    username    : { type: String },
-    email       : { type: String }
+    name        : { type: String },
+    email       : { type: String },
+    avatar      : { type: String },
+    gender      : { type: String },
+    birthday    : { type: String }
 });
 
 const FacebookUserSchema = new Schema({
     id          : { type: String},
-    username    : { type: String },
-    email       : { type: String }
+    name        : { type: String },
+    email       : { type: String },
+    avatar      : { type: String },
+    gender      : { type: String }
 });
 
 const LinkedInUserSchema = new Schema({
     id          : { type: String},
-    username    : { type: String },
+    name        : { type: String },
     email       : { type: String }
 });
 const GitHubUserSchema = new Schema({
     id          : { type: String},
-    username    : { type: String },
+    name        : { type: String},
     email       : { type: String }
 });
 
@@ -49,7 +55,7 @@ const FeedSchema = new Schema({
     downs        : { type : Number},
     comments     : [CommentSchema]
 });
-const ProfileSchema = new Schema({
+const UserProfileSchema = new Schema({
     availableVotes  : { type: Number},
     name            : { type: String },
     email           : { type: String },
@@ -73,7 +79,7 @@ module.exports = {
     FacebookUser: mongoose.model('facebookUser', FacebookUserSchema),
     LinkedInUser: mongoose.model('linkedInUser', LinkedInUserSchema),
     GitHubUser: mongoose.model('gitHubUser', GitHubUserSchema),
-    Profile: mongoose.model('profile', ProfileSchema),
+    UserProfile: mongoose.model('userProfile', UserProfileSchema),
     Feed: mongoose.model('feed', FeedSchema),
     Comment: mongoose.model('comment', CommentSchema),
     CrashLog : mongoose.model('crashLog', CrashLogSchema)
