@@ -26,3 +26,20 @@ footer .circles-stats{
     text-transform: uppercase;
     left: 25%;
 }
+.social-links .button{
+    border-radius: 50%;
+    margin-right: .7em;
+    background-color: transparent;
+    border: .1em solid rgb(150,150,150);
+    color: rgb(150,150,150);
+    font-size: 1.4rem!important;
+}
+.social-links .button:hover{
+    background-color: rgba(100,100,100, .4);
+}
+.ui.embed>.placeholder{
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}

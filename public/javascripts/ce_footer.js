@@ -1,5 +1,6 @@
 (function(){
     updateStats();
+    $('.ui.embed').embed();
 })();
 
 function updateStats(){
