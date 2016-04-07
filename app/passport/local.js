@@ -11,7 +11,7 @@ const localConfig = function(app){
             if (err) {
                 return next(err);
             }
-            res.redirect('ce');
+            res.redirect('toi');
         });
     });
 
