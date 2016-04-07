@@ -6,8 +6,14 @@ var userController = require('../app/controllers/userProfile');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    if(req.user)
-    res.render('login', { title: "[ae] Apps", user : req.user, message : req.flash('error')});
+
+    if(!req.user) {
+
+        res.render('login', {title: "[ae] Apps", message: req.flash('error')});
+    }
+    else {
+        res.redirect('/toi');
+    }
 });
 router.get('/login', function(req, res, next) {
     res.render('login', { user : req.user, message : req.flash('error')});
