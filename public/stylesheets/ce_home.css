@@ -2,47 +2,76 @@
 {
     width: 100%!important;
     height: 100%!important;
-    background: url('../images/home_bg.jpg') no-repeat center;
 }
-.home-panel .logo_home {
-    content: url("../images/logo_blue_ext.svg")!important;
+.home-panel > .login-grid {
+    height: 100%!important;
 }
-.home-panel .item{
-    position: relative;
-    top: 5%;
-    left: 6%;
-    z-index: 100;
+.login-grid > .column{
+    background-color: rgba(0,0,0,.3);
+    padding: 5em 3em!important;
+    max-width: 500px!important;
 }
-.dark-blur-panel{
+.sub-text{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.login-grid .horizontal.divider{
+    color: white;
+    margin: 2.5em 0 1.5em 0!important;
+}
+.requesting-panel .ui.button{
+    border-radius: 50%;
+    background-color: transparent;
+    border: .1em solid rgb(100,100,100);
+    color: white;
+}
+.requesting-panel .ui.button:hover{
+    transition: background-color .3s ease-in;
+    background-color: rgb(110,110,110);
+}
+.terminal{
     position: absolute;
-    min-height: 100%;
-    max-height: 1600px;
-    background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,.6), rgba(0,0,0,.4), rgba(0,0,0,.3),rgba(0,0,0,.3));
-    -webkit-filter: blur(7px);
-    -moz-filter: blur(7px);
-    -o-filter: blur(7px);
-    filter: blur(7px);
-    z-index: 10;
+    bottom: 0;
+    left: 0;
+    text-align: left;
+    width: 100%;
+    background-color: black;
+}
+.terminal .comment{
+    color: rgb(120,120,120);
+    font-size: .75em;
+    display: block;
+}
+.terminal-emulator .placeholder{
+    color: rgb(120,120,120);
+    font-size: .75em;
 }
 
-/*
-
-.layer {
-    width: 100%!important;
-    height: 18%!important;
+.terminal-emulator .terminal-input{
+    color: rgb(120,120,120);
+    margin-left: .4em;
+    background-color: transparent;
+    border: none;
+    font-size: .85em;
 }
-.layer_bg{
-    background-color: rgba(1, 0, 0, 0.7)!important;
+.terminal-emulator .terminal-input:focus,
+.terminal-emulator .terminal-input::selection{
+    border-color: transparent;
+    box-shadow: none;
+    outline: 0 none;
 }
-
-.logo_home {
-    width: 20em !important;
-    margin-top: 3% !important;
-    content: url("../images/logo_blue_ext.svg")!important;
+.panel-container.hided{
+    display: none;
 }
-
-.box{
-    position: absolute;
-    bottom: 10px
+.video-container{
+    display: none;
 }
-*/
+.video-container.animated{
+    display: inherit;
+}
+.ui.embed>.placeholder{
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+}

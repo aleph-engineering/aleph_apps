@@ -2,14 +2,38 @@ extends ce_layout
 
 block content
     div(class="home-panel")
-        div(class="dark-blur-panel")
-        div(class="item")
-            div(class="image")
-                img(class="logo_home")
-
-        div(class="ui grid centered container")
-
-
+        div(class="ui middle aligned center aligned grid login-grid")
+            div(class="column")
+                div(class='panel-container')
+                    div(class="sign-in-panel")
+                        h2(class="layer_bg ui dividing inverted header blue ce-font center aligned login-header") Find the professionals you need
+                        div(class="row sub-text")
+                            label(class="ce-font white") Sing in if you already have an account
+                        a(class="ui icon massive linkedin button")
+                            i(class="linkedin icon")
+                        a(class="ui icon massive google plus button")
+                            i(class="google icon")
+                        a(class="ui icon massive black button")
+                            i(class="github icon")
+                        a(class="ui icon massive facebook button")
+                            i(class="facebook icon")
+                    div(class="ui horizontal divider ce-font") Or
+                    div(class='requesting-panel')
+                        div(class="row sub-text")
+                            label(class="ce-font white") You can leave one of your profiles as request to receive an invitation in the future
+                        a(class="ui icon massive button")
+                            i(class="linkedin icon")
+                        a(class="ui icon massive button")
+                            i(class="github icon")
+                div(class='video-container')
+                    div(class="ui embed" data-source="youtube" data-id="D3RSv0vAvT4" data-placeholder="/images/logo_blue_ext.svg")
+                div(class='terminal')
+                    label(class='comment ce-font first-line')
+                    label(class='comment ce-font second-line') # type 'play' to see more
+                    div(class="terminal-emulator")
+                        label(class='placeholder ce-font') root@nauta~:#
+                        input(class='terminal-input ce-font' autofocus='autofocus')
+    script(src='/javascripts/ce_home.js')
 
 
         //div(class="layer layer_bg")
