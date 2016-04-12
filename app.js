@@ -43,8 +43,8 @@ app.use(flash());
  * Mongoose Configurations
  * @type {connections|exports|module.exports}
  */
-var connections = require('./app/db');
-mongoose.connect(process.env.MONGOLAB_URI || connections.DEVELOPMENT_URL);
+//var connections = require('./app/db');
+//mongoose.connect(process.env.MONGOLAB_URI || connections.DEVELOPMENT_URL);
 
 /**
  * Passport Configurations
