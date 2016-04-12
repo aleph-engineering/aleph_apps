@@ -258,84 +258,20 @@
 .notifications-link .menu > .item div.content .description{
     padding-top: .45rem!important;
 }
-
+.flat.ui.button{
+    border-radius: 0!important;
+}
 /*Modals*/
-.modal-container{
-    display: none;
+.ui.modal, .ui.modal > div{
+    border-radius: 0!important;
+    /*background-color: transparent !important;*/
+    background-color: rgb(240,240,240) !important;
 }
-.modal-container.active {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,.85);
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    display: block;
-    text-align: left;
+.ui.modal .ui.ribbon.label{
+    margin-top: 1.5em;
+    left: -16px;
+    font-size: 1rem;
 }
-.modal{
-    /*height: 50%;*/
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    background: rgb(240,240,240);
-    /*box-shadow: 0 0 0 1000em rgba(0,0,0,.85);*/
-    opacity: 0;
-    padding: 2rem 1.5rem;
-}
-.modal.active{
-    animation: horizontalRotate .5s ease-in 0s 1;
-    opacity: 1;
-}
-.modal .line{
-    width: 100%;
-    height: 1px!important;
-    background: rgb(180,180,180);
-    margin-top: .5em;
-    margin-bottom: .5em;
-}
-.modal button.top-right-corner{
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    background-color: rgb(170,170,170);
-    font-size: 1.2rem!important;
-    padding: .4rem;
-}
-.modal .header-title{
-    display: inline-flex;
-}
-.modal .header-title > label{
-    padding: .35em 1.5em;
-    background-color: rgb(170,170,170);
-    color: white;
-    margin-left: -.6em;
-    border-radius: 2px;
-}
-.sender-panel{
-    display: flex!important;
-}
-.sender-panel > *{
-    padding: .44em 2em!important;
-    margin: 0;
-}
-.modal .sender-panel > input{
-    margin-left: -.2em!important;
-    border-radius: 0 4px 4px 0!important;
-}
-
-.modal .sender-panel > .to-email{
-    background-color: rgb(120,120,120);
-    color: white;
-}
-.modal .template-panel{
-    background-color: rgb(245,245,245);
-    padding: 1em;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-.modal .send-invitation-button{
-    margin-top: -1.5em;
+.ui.modal .preview-panel{
+    background-color: rgb(245,245,245)!important;
 }

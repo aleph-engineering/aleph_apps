@@ -46,8 +46,9 @@ function activateSidebar(){
 }
 function activateModal(){
     $('#openInvitationModal').click(function(){
-        $('.modal-container').addClass('active');
-        $('.modal').addClass('active');
+        $('.ui.modal')
+            .modal('setting', 'transition', 'horizontal flip')
+            .modal('show');
     });
 }
 function closeSendEmailModal() {
