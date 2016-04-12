@@ -1,6 +1,32 @@
 extends ce_layout
+
 block content
-    div(class="ui stackable middle aligned center aligned centered grid container")
-        div.row
-            div.column
-                button
+    div.register-page
+        div(class="ui middle aligned center aligned grid register-panel four column stackable container")
+            div(class='two column row text-panel')
+                div.column
+                    h3(class='ce-font blue') Your received an invitation to be part of our big software engineers family, are you ready to work with the best?
+                    h3(class='ce-font blue') Just register with one of these profiles and associate the rest of them once you were in.
+                    h2(class='ce-font white') Happy development!
+            div(class='row links-panel')
+                div.column
+                    h2(class="ui center aligned icon header")
+                        i(class="circular facebook icon ce-facebook-bg")
+                        label(class='ce-font white') Facebook Profile
+                    div(class='description ce-font white') We will use your summary, occupations, headline and much more
+                div.column
+                    h2(class="ui center aligned icon header")
+                        i(class="circular github icon ce-github-bg")
+                        label(class='ce-font white') Github Profile
+                    div(class='description ce-font white') We will use your summary, occupations, headline and much more
+                div.column
+                    h2(class="ui center aligned icon header")
+                        i(class="circular linkedin icon ce-linkedin-bg")
+                        label(class='ce-font white') LinkedIn Profile
+                    div(class='description ce-font white') We will use your summary, occupations, headline and much more
+                div.column
+                    h2(class="ui center aligned icon header")
+                        i(class="circular google plus icon ce-google-bg")
+                        label(class='ce-font white') Github Profile
+                    div(class='description ce-font white') We will use your summary, occupations, headline and much more
+    link(rel='stylesheet', href='/stylesheets/ce_register.css')
