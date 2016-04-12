@@ -293,3 +293,6 @@ img.ce_logo{
 .ce-separated-description{
     margin-top: 4%;
 }
+.hided{
+    display: none;
+}
