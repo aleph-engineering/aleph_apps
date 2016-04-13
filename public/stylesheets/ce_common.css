@@ -294,5 +294,5 @@ img.ce_logo{
     margin-top: 4%;
 }
 .hided{
-    display: none;
+    display: none!important;
 }

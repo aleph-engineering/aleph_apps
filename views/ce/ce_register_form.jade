@@ -1,13 +1,16 @@
-div(class="ui middle aligned center aligned grid register-form four column stackable container")
-    div.column
-        form(class='ui form ce-font')
-            div(class='field')
-                label Username *
-                input(type='text' name='username' placeholder="Username")
-            div(class='field')
-                label Email *
-                input(type='email' name='email' placeholder="Email")
-            div(class='field')
-                label Username
-                input(type='text' name='username' placeholder="Username")
-
+div(class="ui middle aligned center aligned grid register-form column stackable container hided")
+    div.column.ui.grid.middle.aligned.center.aligned
+        div.row
+            h3(class='ce-font white') Wellcome to Cuban Engineer!
+        div(class='five wide column')
+            img(class='ui circular centered small image' src='/images/refucktor_avatar.png')
+        div(class='eleven wide column')
+            form(class='ui form')
+                div(class='field ce-font white')
+                    label(class='ce-font white') Username *
+                    input(type='text' name='username' placeholder="Username")
+                div(class='field ce-font white')
+                    label(class='ce-font white') Email *
+                    input(type='email' name='email' placeholder="Email")
+                div(class='field')
+                    input(class='ui fluid button ce-linkedin-bg' type='submit', value='Register')

@@ -53,7 +53,6 @@ function activateModal(){
 }
 function closeSendEmailModal() {
     $('#closeEmailModal').click(function(){
-        $('.modal-container').removeClass('active');
-        $('.modal').removeClass('active');
+        $('.ui.modal').modal('hide');
     })
 }
