@@ -48,7 +48,9 @@
     width: 150px!important;
     height: 150px!important;
 }
-
+.register-form .form .field input{
+    border-radius: 0!important;
+}
 @keyframes growWidth {
     from{
         left:49%;
