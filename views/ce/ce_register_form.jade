@@ -7,10 +7,27 @@ div(class="ui middle aligned center aligned grid register-form column stackable 
         div(class='eleven wide column')
             form(class='ui form')
                 div(class='field ce-font white')
-                    label(class='ce-font white') Username *
-                    input(type='text' name='username' placeholder="Username")
+                    div(class="ui fluid multiple search normal selection dropdown")
+                        input(type="hidden")
+                        i(class="dropdown icon")
+                        div(class="default text") Select one username or type a new one
+                        div(class="menu")
+                            div(class="item" data-value="hmvalcarcel") hmvalcarcel
+                            div(class="item" data-value="refucktor") refucktor
+                            div(class="item" data-value="hector_manuel") hector_manuel
+                    //label(class='ce-font white') Username *
+                    //input(type='text' name='username' placeholder="Username")
                 div(class='field ce-font white')
                     label(class='ce-font white') Email *
                     input(type='email' name='email' placeholder="Email")
+                div(class='field ce-font white')
+                    label(class='ce-font white') Registration Token
+                    input(type='text' name='token' placeholder="Enter here if you have one.")
                 div(class='field m-top3')
                     input(class='ui fluid button ce-linkedin-bg' type='submit', value='Register')
+script.
+    $('.dropdown')
+            .dropdown({
+                allowAdditions: true,
+                maxSelections: 1
+            });

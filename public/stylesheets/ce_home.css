@@ -8,7 +8,7 @@
 }
 .login-grid > .column{
     background-color: rgba(0,0,0,.3);
-    padding: 5em 3em!important;
+    padding: 4em 3em 5em!important;
     max-width: 500px!important;
 }
 .sub-text{
@@ -74,4 +74,13 @@
     left: 10%;
     width: 80%;
     height: 80%;
+}
+
+.header-form{
+    font-size: 1.714rem!important;
+}
+.header-form .home-logo{
+    max-width: 20%;
+    float: left;
+    margin-right: .8em;
 }

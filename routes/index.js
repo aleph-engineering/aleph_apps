@@ -8,6 +8,9 @@ var userController = require('../app/controllers/userProfile');
 router.get('/', function(req, res, next) {
     res.render('index', {title: "[ae] Apps"});
 });
+router.get('/testing', function(req, res, next) {
+    res.render('testing', {title: "[ae] Apps"});
+});
 router.get('/login', function(req, res, next) {
     res.render('login', { user : req.user, message : req.flash('error')});
 });

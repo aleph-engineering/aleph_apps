@@ -88,8 +88,6 @@
 }
 .ce-header-info .username{
     font-size: 1.3rem!important;
-    position: absolute;
-    top: 1em;
 }
 .basic-info .text-info{
     display: block;
@@ -197,8 +195,14 @@
     font-size: .9rem;
 }
 .github-repository{
-    overflow-y: auto;
+    overflow-y: hidden;
     max-height: 21rem;
+}
+.repositories-panel .scroll-buttons{
+    text-align: right;
+    margin-top: 1em;
+    border-top: 1px solid rgb(245,245,245);
+    padding-top: .8em;
 }
 .small-description{
     font-size: .8rem!important;
